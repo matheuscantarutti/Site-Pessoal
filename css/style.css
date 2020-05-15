@@ -1,18 +1,21 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: bordex-box;
+    box-sizing: border-box;
 }
 body{
     background-image: url(bg-gif.gif);
     background-size: 3vh 100%;
-    font-family: fantasy;
+    height: 100vh;
+    font-family: monospace;    
     font-size: 12px;
+    color: silver;
 }
 
 @media(min-width: 400px){
     body{
         font-size: 14px;
+
     }
 }
 
@@ -28,7 +31,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-.menu{
+header .menu{
     background: black;
     position: fixed;
     width: 100vw;
@@ -47,26 +50,70 @@ a{
     color: teal;
 }
 .menu a{
-    
     display: block;
     padding: 10px 20px;
 }
 a:hover{
     text-decoration: underline;
 }
+.site-subtitle, 
 .site-title{
-    margin: 120px;
+    
+    text-align: center;
+    
+}
+.site-title{
+    
     font-size: 4em;
+    font-family: fantasy;
 }
 .site-subtitle{
     font-style: italic;
-    margin: 150px; 
+    
+}
+.portfolio,
+.contato{
+    background: #151B21;
+    padding: 2em;
+    min-height: 100vh;
 }
 
-.site-subtitle, 
-.site-title{
+.portfolio h2,
+.contato h2 {
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 2em;
+}
+
+@media (min-width: 560px) {
+    .portfolio .grid {
+      grid-template-columns: 240px 240px;
+      gap: 5em;
+      align-content: center;
+      justify-content: center;
+    }
+}
+  
+  @media (min-width: 880px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(3, 260px);
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 8em - 48px);
+    }
+}
+
+  .portfolio figure {
     text-align: center;
-    color: silver;
-    
-    
+}
+
+.img-portfolio {
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-position: left bottom;
 }
