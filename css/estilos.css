@@ -1,0 +1,54 @@
+.body{
+  background-color: #FEFEFE;
+  max-width: 100vw;
+  height: 100vh;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+.menu{
+  overflow: hidden;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  margin-bottom: 2em;
+  background: whitesmoke;
+}
+.menu ul{
+  display: flex;
+  justify-content:  space-around;
+  padding: .4em; 
+  
+}
+
+.menu li a{
+  display: block;
+  
+  padding: .5em;
+  
+  text-decoration: none;
+}
+
+.titles{
+  
+  margin-top: 5em;
+
+  text-align: center;
+  
+}
+
+.box1{
+  height: 3em;
+  width: 3em;
+  background: #FEFEFE;
+  box-shadow: 
+  3em 3em  aquamarine, 
+  6em 6em darkred,
+  3em 9em orangered,
+  6em 12em teal;
+}
+
+.site-title,
+.site-subtitle{
+  padding:.5em;
+}
